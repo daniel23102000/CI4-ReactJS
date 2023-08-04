@@ -1,0 +1,22 @@
+CRITICAL - 2023-08-03 01:54:52 --> "reuquired" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 286.
+ 1 SYSTEMPATH\Validation\Validation.php(286): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reuquired')
+ 2 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('price', 'price', 999, [...], [...])
+ 3 SYSTEMPATH\Controller.php(141): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Products.php(53): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Products->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\XAMPP\\htdocs\\backend\\backend\\public\\index.php')
+CRITICAL - 2023-08-03 02:04:54 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1693.
+ 1 SYSTEMPATH\BaseModel.php(1693): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Products.php(108): CodeIgniter\Model->update('1')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Products->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\XAMPP\\htdocs\\backend\\backend\\public\\index.php')
